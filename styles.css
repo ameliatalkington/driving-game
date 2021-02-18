@@ -12,3 +12,12 @@ body {
   height: 100vh;
   background-color: green;
 }
+
+.car-container {
+  width: 150px;
+  height: 150px;
+}
+
+.car-image {
+  width: 100%;
+}
