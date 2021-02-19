@@ -5,15 +5,13 @@ var x = 0;
 var y = 0;
 var translate = '';
 
-var carData = [
-  {
-    direction: 'east',
-    location: {
-      x: 0,
-      y: 0
-    }
+var carData = {
+  direction: 'east',
+  location: {
+    x: 0,
+    y: 0
   }
-];
+};
 
 function moveCar() {
   translate = 'translate(' + x + 'px, ' + y + 'px)';
