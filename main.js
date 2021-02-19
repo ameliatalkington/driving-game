@@ -2,6 +2,8 @@ var $car = document.querySelector('.car-image');
 $car.style.top = '0';
 $car.style.left = '0';
 var translate = '';
+var spaceCounter = 0;
+var interval = null;
 
 var carData = {
   direction: 'east',
@@ -31,6 +33,11 @@ document.addEventListener('keydown', event => {
     $car.style.transform = 'rotate(90deg)';
     carData[0].direction = 'south';
   } else if (event.key === ' ') {
-    setInterval(moveCar, 16);
+    if (spaceCounter % 2 === 0) {
+      interval = setInterval(moveCar, 16);
+    } else {
+      clearInterval(interval);
+    }
+    spaceCounter++;
   }
 });
