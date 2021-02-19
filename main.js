@@ -3,6 +3,7 @@ $car.style.top = '0';
 $car.style.left = '0';
 var x = 0;
 var y = 0;
+var translate = '';
 
 var carData = [
   {
@@ -15,7 +16,6 @@ var carData = [
 ];
 
 function moveCar() {
-  var translate = '';
   translate = 'translate(' + x + 'px, ' + y + 'px)';
   x = x + 7;
   $car.style.transform = translate;
