@@ -1,8 +1,6 @@
 var $car = document.querySelector('.car-image');
 $car.style.top = '0';
 $car.style.left = '0';
-var x = 0;
-var y = 0;
 var translate = '';
 
 var carData = {
@@ -14,8 +12,8 @@ var carData = {
 };
 
 function moveCar() {
-  translate = 'translate(' + x + 'px, ' + y + 'px)';
-  x = x + 7;
+  translate = 'translate(' + carData.location.x + 'px, ' + carData.location.y + 'px)';
+  carData.location.x += 7;
   $car.style.transform = translate;
 }
 
