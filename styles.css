@@ -14,10 +14,12 @@ body {
 }
 
 .car-container {
+  position: relative;
   width: 150px;
   height: 150px;
 }
 
 .car-image {
   width: 100%;
+  position: absolute;
 }
